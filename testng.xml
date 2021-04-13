@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name = "fromPort" value = "Mexico City"></parameter>
+  <parameter name = "toPort" value = "Berlin"></parameter>
+  <parameter name = "fname" value = "John Durai"></parameter>
+  <parameter name = "address" value = "No 2 Street of william, Chicago"></parameter>
+  <parameter name = "city" value = "Berlin"></parameter>
+  <parameter name = "state" value = "German Federal"></parameter>
+  <parameter name = "zipcode" value = "10115"></parameter>
+  <parameter name = "cardtyp" value = "American Express"></parameter>
+  <parameter name = "cardno" value = "2413463557351765"></parameter>
+  <parameter name = "month" value = "07"></parameter>
+  <parameter name = "year" value = "2022"></parameter>
+  <parameter name = "nameoncard" value = "JD"></parameter>
+    <classes>
+      <class name="org.extent.SampleReport"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
