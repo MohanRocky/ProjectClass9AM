@@ -2,13 +2,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="zipcode" value="10115"/>
+    <parameter name="fname" value="John Durai"/>
+    <parameter name="nameoncard" value="JD"/>
+    <parameter name="address" value="No 2 Street of william, Chicago"/>
+    <parameter name="month" value="07"/>
     <parameter name="fromPort" value="Mexico City"/>
+    <parameter name="city" value="Berlin"/>
+    <parameter name="year" value="2022"/>
     <parameter name="toPort" value="Berlin"/>
+    <parameter name="state" value="German Federal"/>
+    <parameter name="cardno" value="2413463557351765"/>
+    <parameter name="cardtyp" value="American Express"/>
     <classes>
       <class name="org.extent.SampleReport">
         <methods>
           <include name="cChooseFlight"/>
+          <include name="dFlightReservation" invocation-numbers="0"/>
           <include name="beforeClass"/>
+          <include name="confirmation" invocation-numbers="0"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- org.extent.SampleReport -->
